@@ -14,6 +14,7 @@ namespace DytronCustomers.Data
             modelBuilder.Entity<Customer>().HasData(
                 Enumerable.Range(1, 20).Select(i => new Customer
                 {
+                    Id = i,
                     FirstName = $"First-{i}",
                     LastName = $"Last-{i}",
                     Email = $"customer{i}@example.com",
